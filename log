@@ -1,0 +1,184 @@
+/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/sklearn/utils/linear_assignment_.py:18: FutureWarning: The linear_assignment_ module is deprecated in 0.21 and will be removed from 0.23. Use scipy.optimize.linear_sum_assignment instead.
+  warnings.warn(
+/vilsrv-storage/tohamy/BNP/GAN_DP/self-conditioned-gan/gan_training/config.py:19: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cfg_special = yaml.load(f)
+/vilsrv-storage/tohamy/BNP/GAN_DP/self-conditioned-gan/gan_training/config.py:30: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  cfg = yaml.load(f)
+{'clusterer': {'kwargs': {'num_components': -1, 'placeholder': 'None'},
+               'name': 'supervised',
+               'nimgs': 25000},
+ 'data': {'deterministic': False,
+          'img_size': 32,
+          'nlabels': 1000,
+          'train_dir': 'data/MNIST',
+          'type': 'stacked_mnist'},
+ 'discriminator': {'conditioning': 'unconditional',
+                   'kwargs': {'pack_size': 1, 'placeholder': 'None'},
+                   'name': 'dcgan_shallow',
+                   'nlabels': 1},
+ 'generator': {'conditioning': 'unconditional',
+               'kwargs': {'placeholder': 'None'},
+               'name': 'dcgan_shallow',
+               'nlabels': 1},
+ 'training': {'backup_every': 5000,
+              'batch_size': 64,
+              'beta1': 0.0,
+              'beta2': 0.99,
+              'burnin_time': 0,
+              'gan_type': 'standard',
+              'inception_every': 10000,
+              'inception_nsamples': 50000,
+              'log_every': 1000,
+              'lr_d': 0.0001,
+              'lr_g': 0.0001,
+              'model_average_beta': 0.999,
+              'monitoring': 'tensorboard',
+              'ntest': 128,
+              'nworkers': 72,
+              'optimizer': 'adam',
+              'out_dir': 'output/stacked_mnist/unconditional',
+              'recluster_every': 10000,
+              'reg_param': 0.0,
+              'reg_type': 'none',
+              'sample_every': 5000,
+              'sample_nlabels': 20,
+              'take_model_average': False}}
+Getting features from penultimate
+Found no files with extension "model" under output/stacked_mnist/unconditional/chkpts
+File not found output/stacked_mnist/unconditional/chkpts/model_-0000001.pt
+Trying again to load w/o data parallel modules
+File not found output/stacked_mnist/unconditional/chkpts/model_-0000001.pt
+
+Models not found
+Loading clusterer:
+Initializing new clusterer. The first clustering can be quite slow.
+D reg gamma 0.0
+Start training...
+[epoch 0, it    0] g_loss = 1.0060, d_loss = 1.4615, reg=0.0000
+Creating samples...
+Saving backup...
+[epoch 0, it 1000] g_loss = 3.1425, d_loss = 0.6240, reg=0.0000
+[epoch 1, it 2000] g_loss = 2.0172, d_loss = 0.3837, reg=0.0000
+[epoch 1, it 3000] g_loss = 1.3990, d_loss = 0.7016, reg=0.0000
+[epoch 2, it 4000] g_loss = 3.3410, d_loss = 0.1876, reg=0.0000
+[epoch 3, it 5000] g_loss = 3.5327, d_loss = 0.1298, reg=0.0000
+Creating samples...
+Saving backup...
+[epoch 3, it 6000] g_loss = 5.1456, d_loss = 0.1339, reg=0.0000
+[epoch 4, it 7000] g_loss = 4.1778, d_loss = 0.1025, reg=0.0000
+[epoch 5, it 8000] g_loss = 4.3795, d_loss = 0.1019, reg=0.0000
+[epoch 5, it 9000] g_loss = 2.5228, d_loss = 0.3572, reg=0.0000
+[epoch 6, it 10000] g_loss = 3.0327, d_loss = 0.2498, reg=0.0000
+Creating samples...
+PyTorch Inception score...
+/vilsrv-storage/dinari/miniconda3/envs/condirit/lib/python3.8/site-packages/torch/nn/functional.py:2503: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  warnings.warn("Default upsampling behavior when mode={} is changed "
+[epoch 6, it 10000] pt_inception_mean: 2.2103215178785423, pt_inception_stddev: 0.0
+Saving backup...
+[epoch 7, it 11000] g_loss = 4.5423, d_loss = 0.0597, reg=0.0000
+[epoch 7, it 12000] g_loss = 1.0418, d_loss = 1.1309, reg=0.0000
+[epoch 8, it 13000] g_loss = 5.0345, d_loss = 0.0339, reg=0.0000
+[epoch 8, it 14000] g_loss = 1.5653, d_loss = 0.7482, reg=0.0000
+[epoch 9, it 15000] g_loss = 4.3174, d_loss = 0.0665, reg=0.0000
+Creating samples...
+Saving backup...
+[epoch 10, it 16000] g_loss = 3.1596, d_loss = 0.4683, reg=0.0000
+[epoch 10, it 17000] g_loss = 3.5614, d_loss = 0.1285, reg=0.0000
+[epoch 11, it 18000] g_loss = 6.4175, d_loss = 0.0286, reg=0.0000
+[epoch 12, it 19000] g_loss = 3.5007, d_loss = 0.1080, reg=0.0000
+[epoch 12, it 20000] g_loss = 5.2757, d_loss = 0.0381, reg=0.0000
+Creating samples...
+PyTorch Inception score...
+[epoch 12, it 20000] pt_inception_mean: 2.0557687613182045, pt_inception_stddev: 0.0
+Saving backup...
+[epoch 13, it 21000] g_loss = 5.5838, d_loss = 0.0205, reg=0.0000
+[epoch 14, it 22000] g_loss = 6.1290, d_loss = 0.2422, reg=0.0000
+[epoch 14, it 23000] g_loss = 4.7348, d_loss = 0.0411, reg=0.0000
+[epoch 15, it 24000] g_loss = 4.2507, d_loss = 0.0680, reg=0.0000
+[epoch 16, it 25000] g_loss = 2.4659, d_loss = 0.5225, reg=0.0000
+Creating samples...
+Saving backup...
+[epoch 16, it 26000] g_loss = 3.5539, d_loss = 0.1201, reg=0.0000
+[epoch 17, it 27000] g_loss = 5.5456, d_loss = 0.0312, reg=0.0000
+[epoch 17, it 28000] g_loss = 6.6538, d_loss = 0.0257, reg=0.0000
+[epoch 18, it 29000] g_loss = 5.0961, d_loss = 0.0348, reg=0.0000
+[epoch 19, it 30000] g_loss = 6.0773, d_loss = 0.0130, reg=0.0000
+Creating samples...
+PyTorch Inception score...
+[epoch 19, it 30000] pt_inception_mean: 2.0163874196288982, pt_inception_stddev: 0.0
+Saving backup...
+[epoch 19, it 31000] g_loss = 4.3071, d_loss = 0.1017, reg=0.0000
+[epoch 20, it 32000] g_loss = 3.6891, d_loss = 0.2686, reg=0.0000
+[epoch 21, it 33000] g_loss = 3.8437, d_loss = 0.0869, reg=0.0000
+[epoch 21, it 34000] g_loss = 2.0872, d_loss = 0.6492, reg=0.0000
+[epoch 22, it 35000] g_loss = 6.9281, d_loss = 0.0046, reg=0.0000
+Creating samples...
+Saving backup...
+[epoch 23, it 36000] g_loss = 5.2771, d_loss = 0.0441, reg=0.0000
+[epoch 23, it 37000] g_loss = 5.8400, d_loss = 0.1004, reg=0.0000
+[epoch 24, it 38000] g_loss = 6.4978, d_loss = 0.0087, reg=0.0000
+[epoch 24, it 39000] g_loss = 5.1298, d_loss = 0.0331, reg=0.0000
+[epoch 25, it 40000] g_loss = 5.3420, d_loss = 0.0199, reg=0.0000
+Creating samples...
+PyTorch Inception score...
+[epoch 25, it 40000] pt_inception_mean: 2.133052312360549, pt_inception_stddev: 0.0
+Saving backup...
+[epoch 26, it 41000] g_loss = 3.7276, d_loss = 0.1019, reg=0.0000
+[epoch 26, it 42000] g_loss = 2.8179, d_loss = 0.3855, reg=0.0000
+[epoch 27, it 43000] g_loss = 5.7843, d_loss = 0.0269, reg=0.0000
+[epoch 28, it 44000] g_loss = 5.7523, d_loss = 0.0137, reg=0.0000
+[epoch 28, it 45000] g_loss = 6.1688, d_loss = 0.0099, reg=0.0000
+Creating samples...
+Saving backup...
+[epoch 29, it 46000] g_loss = 6.6799, d_loss = 0.0111, reg=0.0000
+[epoch 30, it 47000] g_loss = 1.0993, d_loss = 0.8396, reg=0.0000
+[epoch 30, it 48000] g_loss = 4.5593, d_loss = 0.0873, reg=0.0000
+[epoch 31, it 49000] g_loss = 7.0042, d_loss = 0.0119, reg=0.0000
+[epoch 32, it 50000] g_loss = 5.2931, d_loss = 0.0811, reg=0.0000
+Creating samples...
+PyTorch Inception score...
+[epoch 32, it 50000] pt_inception_mean: 2.133089023368268, pt_inception_stddev: 0.0
+Saving backup...
+[epoch 32, it 51000] g_loss = 4.7701, d_loss = 0.0919, reg=0.0000
+[epoch 33, it 52000] g_loss = 6.3225, d_loss = 0.1252, reg=0.0000
+[epoch 33, it 53000] g_loss = 5.2224, d_loss = 0.0314, reg=0.0000
+[epoch 34, it 54000] g_loss = 4.8387, d_loss = 0.0439, reg=0.0000
+[epoch 35, it 55000] g_loss = 4.5447, d_loss = 0.0834, reg=0.0000
+Creating samples...
+Saving backup...
+[epoch 35, it 56000] g_loss = 3.8233, d_loss = 0.2756, reg=0.0000
+[epoch 36, it 57000] g_loss = 4.2696, d_loss = 0.0924, reg=0.0000
+[epoch 37, it 58000] g_loss = 5.6517, d_loss = 0.0123, reg=0.0000
+[epoch 37, it 59000] g_loss = 7.2430, d_loss = 0.0064, reg=0.0000
+[epoch 38, it 60000] g_loss = 7.9218, d_loss = 0.0901, reg=0.0000
+Creating samples...
+PyTorch Inception score...
+[epoch 38, it 60000] pt_inception_mean: 2.1809594266370183, pt_inception_stddev: 0.0
+Saving backup...
+[epoch 39, it 61000] g_loss = 4.9332, d_loss = 0.0278, reg=0.0000
+[epoch 39, it 62000] g_loss = 6.2421, d_loss = 0.0306, reg=0.0000
+[epoch 40, it 63000] g_loss = 7.1637, d_loss = 0.0030, reg=0.0000
+[epoch 40, it 64000] g_loss = 4.2643, d_loss = 0.0832, reg=0.0000
+[epoch 41, it 65000] g_loss = 5.6581, d_loss = 0.0167, reg=0.0000
+Creating samples...
+Saving backup...
+[epoch 42, it 66000] g_loss = 4.6864, d_loss = 0.1525, reg=0.0000
+[epoch 42, it 67000] g_loss = 6.9200, d_loss = 0.0038, reg=0.0000
+[epoch 43, it 68000] g_loss = 3.7148, d_loss = 0.1484, reg=0.0000
+[epoch 44, it 69000] g_loss = 4.7436, d_loss = 0.0561, reg=0.0000
+[epoch 44, it 70000] g_loss = 7.7535, d_loss = 0.4415, reg=0.0000
+Creating samples...
+PyTorch Inception score...
+[epoch 44, it 70000] pt_inception_mean: 2.1730351269988186, pt_inception_stddev: 0.0
+Saving backup...
+[epoch 45, it 71000] g_loss = 6.3169, d_loss = 0.0180, reg=0.0000
+[epoch 46, it 72000] g_loss = 6.7837, d_loss = 0.0089, reg=0.0000
+[epoch 46, it 73000] g_loss = 6.6982, d_loss = 0.0065, reg=0.0000
+[epoch 47, it 74000] g_loss = 4.3407, d_loss = 0.1844, reg=0.0000
+[epoch 48, it 75000] g_loss = 6.1293, d_loss = 0.0095, reg=0.0000
+Creating samples...
+Saving backup...
+[epoch 48, it 76000] g_loss = 3.7753, d_loss = 0.1466, reg=0.0000
+[epoch 49, it 77000] g_loss = 5.9077, d_loss = 0.0769, reg=0.0000
+[epoch 49, it 78000] g_loss = 4.6223, d_loss = 0.2379, reg=0.0000
+[epoch 50, it 79000] g_loss = 4.9028, d_loss = 0.0255, reg=0.0000

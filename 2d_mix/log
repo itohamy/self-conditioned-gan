@@ -1,0 +1,17 @@
+D reg gamma 0
+Fitting k-means w data shape (10000, 200)
+Initializing k-means with previous cluster assignments
+Fitting k-means w data shape (10000, 200)
+Doing cluster matching
+[epoch 0 it 0] dloss = 1.401639461517334, gloss = 0.6867654323577881, prop_real = 1.0, modes = 1, kl = 3.2188758248682006
+[epoch 1 it 1000] dloss = 1.3672481775283813, gloss = 0.7018901109695435, prop_real = 0.48288, modes = 25, kl = 0.00017783553187617374
+[epoch 2 it 2000] dloss = 1.3789660930633545, gloss = 0.6926106214523315, prop_real = 0.60224, modes = 25, kl = 0.0001731591951483006
+[epoch 3 it 3000] dloss = 1.3729534149169922, gloss = 0.7104403376579285, prop_real = 0.6658, modes = 25, kl = 0.00017356901009753223
+[epoch 4 it 4000] dloss = 1.3691742420196533, gloss = 0.6982157826423645, prop_real = 0.70868, modes = 25, kl = 0.00017356901009753223
+Initializing k-means with previous cluster assignments
+Fitting k-means w data shape (10000, 200)
+Doing cluster matching
+[epoch 5 it 5000] dloss = 1.367917537689209, gloss = 0.71712327003479, prop_real = 0.76382, modes = 25, kl = 0.00017356901009753223
+[epoch 6 it 6000] dloss = 1.3868770599365234, gloss = 0.6988613605499268, prop_real = 0.92432, modes = 25, kl = 0.00017356901009753223
+[epoch 7 it 7000] dloss = 1.3850698471069336, gloss = 0.7077531814575195, prop_real = 0.88272, modes = 25, kl = 0.00017356901009753223
+[epoch 8 it 8000] dloss = 1.3776934146881104, gloss = 0.7020733952522278, prop_real = 0.9185, modes = 25, kl = 0.00017356901009753223
